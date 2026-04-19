@@ -26,6 +26,8 @@ section {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s ease;
+
 }
 
 label {
@@ -51,4 +53,31 @@ button {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
+    transition: background 0.3s ease;
+}
+
+.text-link {
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.secret-box {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+button:hover {
+    background: #218838;
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
 }

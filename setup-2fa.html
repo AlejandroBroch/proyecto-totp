@@ -10,13 +10,14 @@
     <section>
         <h1>Activar autenticación en dos pasos</h1>
         <p>Escanea el código QR con tu app o introduce la clave manualmente</p>
-        <div>Clave secreta: JBSWY3DPEHPK3PXP</div>
+        <div class="secret-box">Clave secreta: JBSWY3DPEHPK3PXP</div>
         <form action="">
             <label for="code">Introduce el código de 6 dígitos</label>
-            <input type="text" id="code" name="code" required>
+            <input type="text" id="code" name="code" required maxlength="6" inputmode="numeric">
             <button type="submit">Confirmar activación</button>
         </form>
-        <a href="dashboard.html">Volver al dashboard</a>
+        <a href="dashboard.html" class="text-link">Volver al dashboard</a>
     </section>
+    <script src="js/setup-2fa.js"></script>
 </body>
 </html>
