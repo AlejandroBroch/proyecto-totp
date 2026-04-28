@@ -24,31 +24,31 @@ Este proyecto implementa un sistema de seguridad TOTP utilizando PHP y una base 
 
 -> Desde la raíz del proyecto ejecuta: 
 
-    ```bash
-    composer install
-    ```
+ ```bash
+ composer install
+ ```
 
 3. **Requisitos de PHP**
 
 -> Es necesario tener activa la extensión GD para la generación de códigos QR:
 
-    ```bash
-   sudo apt install php-gd
-    ```
+ ```bash
+sudo apt install php-gd
+ ```
 
 -> Es necesario también instalar por seguridad SQLite:
 
-    ```bash
-   sudo apt install php-sqlite3
-    ```
+ ```bash
+sudo apt install php-sqlite3
+ ```
     
 4. **Levantar el servidor**
 
 -> Desde la raíz del proyecto, ejecuta:
 
-    ```bash
-   php -S localhost:8000
-    ```
+ ```bash
+ php -S localhost:8000
+ ```
 
 
 ### Requisitos de Base de Datos
