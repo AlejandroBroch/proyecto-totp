@@ -1,0 +1,11 @@
+# No subir las librerías (el profesor debe hacer composer install)
+/vendor/
+
+# No subir la base de datos con datos reales/de prueba
+/backend/*.sqlite
+/backend/*.db
+
+# Archivos temporales del sistema o editores
+.DS_Store
+.vscode/
+*.log
