@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Configurar 2FA</title>
 </head>
 <body>
@@ -11,13 +11,13 @@
         <h1>Activar autenticación en dos pasos</h1>
         <p>Escanea el código QR con tu app o introduce la clave manualmente</p>
         <div class="secret-box">Clave secreta: JBSWY3DPEHPK3PXP</div>
-        <form action="">
+        <form action="../backend/setup-2fa.php" method="post">
             <label for="code">Introduce el código de 6 dígitos</label>
             <input type="text" id="code" name="code" required maxlength="6" inputmode="numeric">
             <button type="submit">Confirmar activación</button>
         </form>
-        <a href="dashboard.html" class="text-link">Volver al dashboar</a>
+        <a href="dashboard.html" class="text-link">Volver al dashboard</a>
     </section>
-    <script src="/frontend/js/setup-2fa.js"></script>
+    <script src="js/setup-2fa.js"></script>
 </body>
 </html>

@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/frontend/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Verificar 2FA</title>
 </head>
 <body>
     <section>
         <h1>Verificar autenticación en dos pasos</h1>
         <p>Introduce el código de 6 dígitos generado por tu app de autenticación</p>
-        <form action="">
+        <form action="../backend/verify-2fa.php" method="post">
             <label for="code">Código de autenticación:</label>
             <input type="text" id="code" name="code" required maxlength="6" inputmode="numeric">
             <button type="submit">Verificar</button>
         </form>
         <a href="login.html" class="text-link">Volver al inicio de sesión</a>
     </section>
-    <script src="/frontend/js/verify-2fa.js"></script>
+    <script src="js/verify-2fa.js"></script>
 </body>
 </html>
