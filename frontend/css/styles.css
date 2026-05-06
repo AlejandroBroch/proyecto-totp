@@ -1,83 +1,157 @@
+* {
+    box-sizing: border-box;
+}
 
 body {
-    background: #f4f4f4;
-    font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
     min-height: 100vh;
+    padding: 32px 16px;
+    background: linear-gradient(135deg, #eef4ff 0%, #f7f9fc 50%, #eef2f7 100%);
+    font-family: Arial, sans-serif;
+    color: #1f2937;
+    text-align: center;
+}
 
+header,
+footer {
+    margin-bottom: 24px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4338ca;
+    letter-spacing: 0.4px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background: #ffffff;
     width: 100%;
-    max-width: 300px;
+    max-width: 420px;
     margin: 40px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 36px 28px;
+    border-radius: 22px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
 }
 
-.btn {
-    display: inline-block;
-    margin: 20px 10px;
-    padding: 10px 20px;
-    background: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
+h1 {
+    margin: 0 0 14px;
+    font-size: 2.1rem;
+    line-height: 1.15;
+    color: #0f172a;
+}
 
+p {
+    margin: 0 0 18px;
+    color: #64748b;
+    line-height: 1.55;
+    font-size: 0.98rem;
 }
 
 label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 14px 0 6px;
     text-align: left;
+    font-weight: 600;
+    color: #334155;
 }
 
-input{
+input {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #28a745;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    transition: background 0.3s ease;
-}
-
-.text-link {
-    margin-top: 20px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.secret-box {
-    margin-top: 20px;
-    padding: 10px;
-    background: #e9ecef;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background: #0056b3;
-}
-
-button:hover {
-    background: #218838;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 14px;
+    background: #f8fafc;
+    font-size: 0.96rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
 
 input:focus {
-    border-color: #007BFF;
+    border-color: #4f46e5;
+    background: #ffffff;
     outline: none;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+button {
+    margin-top: 22px;
+    width: 100%;
+    padding: 13px 18px;
+    background: #16a34a;
+    color: #ffffff;
+    border: none;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #15803d;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(22, 163, 74, 0.18);
+}
+
+.btn {
+    display: inline-block;
+    margin: 18px 8px 0;
+    padding: 13px 18px;
+    min-width: 140px;
+    background: linear-gradient(135deg, #4f46e5 0%, #6d28d9 100%);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 14px;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(79, 70, 229, 0.22);
+    opacity: 0.95;
+}
+
+.text-link {
+    color: #4338ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.secret-box {
+    margin: 18px 0 8px;
+    padding: 14px;
+    background: #f8fafc;
+    border: 1px dashed #cbd5e1;
+    border-radius: 14px;
+    color: #334155;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+footer p {
+    margin-top: 18px;
+    font-size: 0.92rem;
+    color: #94a3b8;
+}
+
+section > .text-link {
+    display: inline-block;
+    margin-top: 18px;
+}
+
+p .text-link {
+    margin-top: 0;
 }

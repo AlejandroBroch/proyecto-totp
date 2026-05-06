@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'db.php';
-require_once '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 use RobThree\Auth\TwoFactorAuth;
 use RobThree\Auth\Providers\Qr\EndroidQrCodeProvider;
@@ -14,7 +14,7 @@ if (empty($_SESSION['2fa_pending_user_id'])) {
 
 $pendingUserId = $_SESSION['2fa_pending_user_id'];
 $pdo  = getDB();
-$tfa  = new TwoFactorAuth(new EndroidQrCodeProvider(), 'Web de Ale y Pau');
+$tfa = new TwoFactorAuth('SecureTOTP');
 $error = '';
 
 // Obtener el secreto TOTP del usuario
